@@ -4,7 +4,7 @@
 <html lang="en-US">
 	<head>
 		<meta charset="utf-8"/>
-		<title>{{ page.site_title }}{% if page.title %}{{ page.title_delimiter }}{{ page.title }}{% endif %}</title>
+		<title>{{ site.site_title }}{% if page.title %}{{ page.title_delimiter }}{{ page.title }}{% endif %}</title>
 		<base href="{{ site.baseurl }}"/>
 		<link rel="canonical" href="{{ site.origin }}{{ page.url }}"/>
 
@@ -16,8 +16,8 @@
     	<meta name="application-name" content="Susan B: Pilates"/>
 
 		<meta property="og:url"         content="{{ site.origin }}{{ page.url }}"/>
-		<meta property="og:site_name"   content="{{ site.title }}"/>
-		<meta property="og:title"       content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"/>
+		<meta property="og:site_name"   content="{{ site.site_title }}"/>
+		<meta property="og:title"       content="{% if page.title %}{{ page.title }}{% else %}{{ site.site_title }}{% endif %}"/>
 		<meta property="og:description" content="{{ page.opengraph_description }}"/>
 		<meta property="og:image"       content="{{ site.baseurl }}{{ site.imgdir }}{{ page.opengraph_image }}"/>
 		<meta property="og:locale"      content="en_US"/>
@@ -29,7 +29,7 @@
 		{% include analytics/body-header.html %}
 
 		<header>
-			<h1>{{ site.title }}</h1>
+			<h1>{{ site.site_title }}</h1>
 			<img id="logo" src="{{ site.imgdir }}logo.svg"/>
 			<nav>
 				<ul id="menu">
