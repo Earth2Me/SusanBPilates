@@ -3,6 +3,8 @@
 
 @import "common";
 
+$menu-padding: .8em;
+
 body {
 	font-size: 12pt;
 	font-family: 'Open Sans', 'Segoe UI', sans-serif;
@@ -12,6 +14,11 @@ body {
 }
 
 body > header {
+	overflow: hidden;
+	position: relative;
+	left: - $menu-padding;
+	margin-right: - $menu-padding;
+
 	h1 {
 		font-weight: 300;
 		font-size: 1.8em;
@@ -22,8 +29,9 @@ body > header {
 	#logo {
 		width: 340px;
 		height: 250px;
+
 		float: right;
-		margin-left: 1em;
+		margin-left: 20px;
 	}
 
 	#menu {
@@ -32,8 +40,10 @@ body > header {
 		margin: 0;
 		padding: 0;
 
+		margin-right: 340px;
+
 		li {
-			font-size: 1.2em;
+			font-size: 1.4em;
 			display: block;
 			margin: 0;
 			padding: 0;
@@ -42,16 +52,16 @@ body > header {
 			a {
 				position: relative;
 				display: block;
-				padding: 1.5em;
+				padding: .5em $menu-padding;
 				background-color: transparent;
 				color: $color;
+				text-decoration: none
 				left: 0;
 				transition: left 1s, background-color 1s, color 1s;
-
 			}
 
 			&:hover a {
-				left: 1em;
+				left: 2em;
 				background-color: $active;
 				color: $active-overlay;
 			}
