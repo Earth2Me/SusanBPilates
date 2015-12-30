@@ -7,11 +7,3 @@ sudo: false
 branches:
   only:
     - gh-pages
-
-exclude:
-  - vendor
-  - README.md
-  - Gemfile
-  - CNAME
-  - .travis.yml
-  - LICENSE
