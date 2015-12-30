@@ -34,7 +34,7 @@ defaults:
       type: pages
     values:
       layout: page
-      permalink: /:path/:basename
+      permalink: :path/:basename
   - scope:
       path: ''
       type: posts
