@@ -85,7 +85,11 @@ body > header {
 					left: 1em;
 					background-color: $active;
 					color: $active-overlay;
-					@media (light-level: dim) { color: $active-overlay-dim; }
+					
+					@media (light-level: dim) {
+						background-color: $active-dim;
+						color: $active-overlay-dim;
+					}
 				}
 		}
 	}
