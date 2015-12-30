@@ -16,8 +16,6 @@ body {
 body > header {
 	overflow: hidden;
 	position: relative;
-	left: - $menu-padding;
-	margin-right: - $menu-padding;
 
 	h1 {
 		font-weight: 300;
@@ -35,11 +33,14 @@ body > header {
 	}
 
 	#menu {
+		position: relative;
 		font-weight: 300;
 		list-style: none;
 		margin: 0;
 		padding: 0;
 		max-width: 16em;
+		left: - $menu-padding;
+		margin-right: - $menu-padding;
 
 		li {
 			font-size: 1.4em;
