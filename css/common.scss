@@ -165,7 +165,5 @@ main {
 		font-size: 1.8em;
 		margin-top: 0;
 		margin-bottom: 1em;
-		border-bottom: 1px dotted $gray;
-		@media (light-level: dim) { border-bottom: 1px dotted $gray-dim; }
 	}
 }
