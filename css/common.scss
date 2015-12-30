@@ -49,19 +49,18 @@ body > header {
 			overflow: visible;
 			position: relative;
 
-			a {
+			a, span {
 				display: block;
-				text-decoration: none;
+				text-decoration: none !important;
+				color: $color;
 			}
 
 			span {
 				$animation-duration: 400ms;
 
 				position: relative;
-				display: block;
 				padding: .5em $menu-padding;
 				background-color: transparent;
-				color: $color;
 				left: 0;
 				transition: left $animation-duration, background-color $animation-duration, color $animation-duration;
 			}
