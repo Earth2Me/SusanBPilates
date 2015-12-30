@@ -49,6 +49,8 @@ body > header {
 			overflow: visible;
 
 			a {
+				$animation-duration: 400ms;
+
 				position: relative;
 				display: block;
 				padding: .5em $menu-padding;
@@ -56,7 +58,7 @@ body > header {
 				color: $color;
 				text-decoration: none;
 				left: 0;
-				transition: left 1s, background-color 1s, color 1s;
+				transition: left $animation-duration, background-color $animation-duration, color $animation-duration;
 			}
 
 			&:hover a {
@@ -67,9 +69,16 @@ body > header {
 		}
 	}
 
+body > header {
+	margin-bottom: 2em;
+	padding-bottom: 1em;
+}
 body > footer {
 	margin-top: 2em;
 	padding-top: 1em;
+}
+
+body > footer {
 	border-top: 1px solid $gray;
 	color: $gray;
 
