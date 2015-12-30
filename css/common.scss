@@ -85,7 +85,7 @@ body > header {
 					left: 1em;
 					background-color: $active;
 					color: $active-overlay;
-					
+
 					@media (light-level: dim) {
 						background-color: $active-dim;
 						color: $active-overlay-dim;
@@ -142,7 +142,7 @@ main {
 
 			&:hover, &:focus, &:active {
 				color: $active;
-				@media (light-level: dim) { $active-dim; }
+				@media (light-level: dim) { color: $active-dim; }
 				text-decoration: none;
 			}
 		}
