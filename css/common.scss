@@ -11,19 +11,6 @@ body {
 	padding: 1.5em;
 }
 
-a {
-	text-decoration: underline;
-
-	&, &:link, &:visited {
-		color: $link;
-
-		&:hover, &:focus, &:active {
-			color: $active;
-			text-decoration: none;
-		}
-	}
-}
-
 body > header {
 	h1 {
 		font-weight: 300;
@@ -46,6 +33,7 @@ body > header {
 		padding: 0;
 
 		li {
+			font-size: 1.2em;
 			display: block;
 			margin: 0;
 			padding: 0;
@@ -54,7 +42,7 @@ body > header {
 			a {
 				position: relative;
 				display: block;
-				padding: .3em 1em;
+				padding: 1.5em;
 				background-color: transparent;
 				color: $color;
 				left: 0;
@@ -75,9 +63,41 @@ body > footer {
 	padding-top: 1em;
 	border-top: 1px solid gray;
 	color: gray;
+
+	a {
+		text-decoration: underline;
+
+		&, &:link, &:visited {
+			color: gray;
+
+			&:hover, &:focus, &:active {
+				color: gray;
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+main, body > footer {
+	position: relative;
+	clear: both;
+	overflow: hidden;
 }
 
 main {
+	a {
+		text-decoration: underline;
+
+		&, &:link, &:visited {
+			color: $link;
+
+			&:hover, &:focus, &:active {
+				color: $active;
+				text-decoration: none;
+			}
+		}
+	}
+
 	h1, h2, h3 {
 		font-weight: 300;
 		padding: 0;
