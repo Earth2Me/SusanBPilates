@@ -61,17 +61,17 @@ body > header {
 body > footer {
 	margin-top: 2em;
 	padding-top: 1em;
-	border-top: 1px solid gray;
-	color: gray;
+	border-top: 1px solid $gray;
+	color: $gray;
 
 	a {
 		text-decoration: underline;
 
 		&, &:link, &:visited {
-			color: gray;
+			color: $gray;
 
 			&:hover, &:focus, &:active {
-				color: gray;
+				color: $gray;
 				text-decoration: none;
 			}
 		}
