@@ -5,6 +5,13 @@
 
 $menu-padding: .8em;
 
+html {
+	background-color: $gray;
+	@media (light-level: dim) {
+		background-color: black;
+	}
+}
+
 body {
 	font-size: 12pt;
 	font-family: 'Open Sans', 'Segoe UI', sans-serif;
@@ -13,7 +20,10 @@ body {
 	margin: 0 auto;
 	padding: 1.5em;
 	color: $color;
-	@media (light-level: dim) { color: $color-dim; }
+	@media (light-level: dim) {
+		color: $color-dim;
+		background-color: black;
+	}
 }
 
 body > header {
