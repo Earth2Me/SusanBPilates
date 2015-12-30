@@ -21,6 +21,8 @@ body > header {
 		font-weight: 300;
 		font-size: 1.8em;
 		margin: 0 0 .2em;
+		text-align: center;
+		clear: both;
 	}
 }
 
@@ -43,7 +45,7 @@ body > header {
 		margin-right: - $menu-padding;
 
 		li {
-			font-size: 1.4em;
+			font-size: 1.39em;
 			display: block;
 			margin: 0;
 			padding: 0 1em 0 0;
