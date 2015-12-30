@@ -12,3 +12,8 @@ $gray-border: #bbbbc1;
 $gray-border-dim: #333333;
 
 $weight: 300;
+
+main, nav, section, article, header, footer, aside, figure, figcaption {
+	// Fixes styling issue in many older browsers, especially for <main>
+	display: block;
+}
