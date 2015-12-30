@@ -1,7 +1,6 @@
 language: ruby
 rvm: [2.2.4]
 cache: bundler
-bundler_args: --without development --deployment
 script: 'bundle exec jekyll build'
 branches:
   only:
