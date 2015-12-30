@@ -5,16 +5,15 @@
 	<head>
 		<meta charset="utf-8"/>
 		<title>{{ site.site_title }}{% if page.title %}{{ page.title_delimiter }}{{ page.title }}{% endif %}</title>
-		<base href="{{ site.baseurl }}"/>
 		<link rel="canonical" href="{{ site.baseurl }}{{ page.url }}"/>
 
 		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
-		<link rel="stylesheet" type="text/css" href="{{ site.cssdir }}common.css"/>
-		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,700"/>
+		<link rel="stylesheet" type="text/css" href="{{ site.cssuri }}common.css"/>
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,700,700italic"/>
 
-		<link rel="icon" href="{{ site.imgdir }}favicon.png"/>
-		<meta name="application-name" content="Susan B: Pilates"/>
+		<link rel="icon" href="{{ site.imguri }}favicon.png"/>
+		<meta name="application-name" content="{{ site.site_title }}"/>
 
 		<meta property="og:url"         content="{{ site.baseurl }}{{ page.url }}"/>
 		<meta property="og:site_name"   content="{{ site.site_title }}"/>
@@ -31,14 +30,14 @@
 
 		<header>
 			<h1>{{ site.site_title }}</h1>
-			<img id="logo" src="{{ site.imgdir }}logo.svg"/>
+			<img id="logo" src="{{ site.imguri }}logo.svg"/>
 			<nav>
 				<ul id="menu">
-					<li><a href="{{ site.baseurl }}">        <span>Home            </span></a></li>
-					<li><a href="{{ site.baseurl }}about">   <span>About Susan     </span></a></li>
-					<li><a href="{{ site.baseurl }}classes"> <span>Classes         </span></a></li>
-					<li><a href="{{ site.baseurl }}sessions"><span>Private Sessions</span></a></li>
-					<li><a href="{{ site.baseurl }}contact"> <span>Contact         </span></a></li>
+					<li><a href="{{ site.uri }}/">        <span>Home            </span></a></li>
+					<li><a href="{{ site.uri }}/about">   <span>About Susan     </span></a></li>
+					<li><a href="{{ site.uri }}/classes"> <span>Classes         </span></a></li>
+					<li><a href="{{ site.uri }}/sessions"><span>Private Sessions</span></a></li>
+					<li><a href="{{ site.uri }}/contact"> <span>Contact         </span></a></li>
 				</ul>
 			</nav>
 		</header>
