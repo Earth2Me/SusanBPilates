@@ -72,14 +72,15 @@ body > header {
 body > header {
 	margin-bottom: 2em;
 	padding-bottom: 1em;
+	border-bottom: 1px solid $gray;
 }
 body > footer {
 	margin-top: 2em;
 	padding-top: 1em;
+	border-top: 1px solid $gray;
 }
 
 body > footer {
-	border-top: 1px solid $gray;
 	color: $gray;
 
 	a {
