@@ -16,8 +16,8 @@ body {
 body > header {
 	overflow: hidden;
 	position: relative;
-	left: 0 - $menu-padding;
-	margin-right: 0 - $menu-padding;
+	left: - $menu-padding;
+	margin-right: - $menu-padding;
 
 	h1 {
 		font-weight: 300;
@@ -55,7 +55,7 @@ body > header {
 				padding: .5em $menu-padding;
 				background-color: transparent;
 				color: $color;
-				text-decoration: none
+				text-decoration: none;
 				left: 0;
 				transition: left 1s, background-color 1s, color 1s;
 			}
