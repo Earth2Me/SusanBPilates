@@ -20,6 +20,7 @@ body {
 	margin: 0 auto;
 	padding: 1.5em;
 	color: $color;
+	background-color: white;
 	@media (light-level: dim) {
 		color: $color-dim;
 		background-color: black;
