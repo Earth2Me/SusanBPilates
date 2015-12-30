@@ -51,6 +51,7 @@ body > header {
 
 			a {
 				display: block;
+				text-decoration: none;
 			}
 
 			span {
@@ -61,7 +62,6 @@ body > header {
 				padding: .5em $menu-padding;
 				background-color: transparent;
 				color: $color;
-				text-decoration: none;
 				left: 0;
 				transition: left $animation-duration, background-color $animation-duration, color $animation-duration;
 			}
