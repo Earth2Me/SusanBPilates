@@ -11,6 +11,8 @@ body {
 	max-width: 1000px;
 	margin: 0 auto;
 	padding: 1.5em;
+	color: $color;
+	@media (light-level: dim) { color: $color-dim; }
 }
 
 body > header {
@@ -29,9 +31,17 @@ body > header {
 	#logo {
 		width: 340px;
 		height: 250px;
+		display: block;
 
 		float: right;
 		margin-left: 20px;
+
+		@media (max-width: 450px) {
+			float: none;
+			margin: 0 auto;
+			width: 270px;
+			height: 125px;
+		}
 	}
 
 	#menu {
@@ -58,6 +68,7 @@ body > header {
 				display: block;
 				text-decoration: none !important;
 				color: $color;
+				@media (light-level: dim) { color: $color-dim; }
 			}
 
 			span {
@@ -74,6 +85,7 @@ body > header {
 					left: 1em;
 					background-color: $active;
 					color: $active-overlay;
+					@media (light-level: dim) { color: $active-overlay-dim; }
 				}
 		}
 	}
@@ -82,24 +94,29 @@ body > header {
 	margin-bottom: 2em;
 	padding-bottom: 1em;
 	border-bottom: 1px solid $gray;
+	@media (light-level: dim) { border-bottom: 1px solid $gray-dim; }
 }
 body > footer {
 	margin-top: 2em;
 	padding-top: 1em;
 	border-top: 1px solid $gray;
+	@media (light-level: dim) { border-top: 1px solid $gray-dim; }
 }
 
 body > footer {
 	color: $gray;
+	@media (light-level: dim) { color: $gray-dim; }
 
 	a {
 		text-decoration: underline;
 
 		&, &:link, &:visited {
 			color: $gray;
+			@media (light-level: dim) { color: $gray-dim; }
 
 			&:hover, &:focus, &:active {
 				color: $gray;
+				@media (light-level: dim) { color: $gray-dim; }
 				text-decoration: none;
 			}
 		}
@@ -121,6 +138,7 @@ main {
 
 			&:hover, &:focus, &:active {
 				color: $active;
+				@media (light-level: dim) { $active-dim; }
 				text-decoration: none;
 			}
 		}
@@ -144,5 +162,6 @@ main {
 		margin-top: 0;
 		margin-bottom: 1em;
 		border-bottom: 1px dotted $gray;
+		@media (light-level: dim) { border-bottom: 1px dotted $gray-dim; }
 	}
 }
