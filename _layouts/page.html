@@ -6,7 +6,7 @@
 		<meta charset="utf-8"/>
 		<title>{{ site.site_title }}{% if page.title %}{{ page.title_delimiter }}{{ page.title }}{% endif %}</title>
 		<base href="{{ site.baseurl }}"/>
-		<link rel="canonical" href="{{ site.origin }}{{ page.url }}"/>
+		<link rel="canonical" href="{{ site.baseurl }}{{ page.url }}"/>
 
 		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -16,7 +16,7 @@
 		<link rel="icon" href="{{ site.imgdir }}favicon.png"/>
 		<meta name="application-name" content="Susan B: Pilates"/>
 
-		<meta property="og:url"         content="{{ site.origin }}{{ page.url }}"/>
+		<meta property="og:url"         content="{{ site.baseurl }}{{ page.url }}"/>
 		<meta property="og:site_name"   content="{{ site.site_title }}"/>
 		<meta property="og:title"       content="{% if page.title %}{{ page.title }}{% else %}{{ site.site_title }}{% endif %}"/>
 		<meta property="og:description" content="{{ page.opengraph_description }}"/>
@@ -34,11 +34,11 @@
 			<img id="logo" src="{{ site.imgdir }}logo.svg"/>
 			<nav>
 				<ul id="menu">
-					<li><a href=".">       <span>Home            </span></a></li>
-					<li><a href="about">   <span>About Susan     </span></a></li>
-					<li><a href="classes"> <span>Classes         </span></a></li>
-					<li><a href="sessions"><span>Private Sessions</span></a></li>
-					<li><a href="contact"> <span>Contact         </span></a></li>
+					<li><a href="{{ site.baseurl }}">        <span>Home            </span></a></li>
+					<li><a href="{{ site.baseurl }}about">   <span>About Susan     </span></a></li>
+					<li><a href="{{ site.baseurl }}classes"> <span>Classes         </span></a></li>
+					<li><a href="{{ site.baseurl }}sessions"><span>Private Sessions</span></a></li>
+					<li><a href="{{ site.baseurl }}contact"> <span>Contact         </span></a></li>
 				</ul>
 			</nav>
 		</header>
