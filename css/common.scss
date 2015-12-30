@@ -6,7 +6,7 @@
 $menu-padding: .8em;
 
 html {
-	background-color: $gray;
+	background-color: $gray-border;
 	@media (light-level: dim) {
 		background-color: black;
 	}
@@ -108,14 +108,14 @@ body > header {
 body > header {
 	margin-bottom: 2em;
 	padding-bottom: 1em;
-	border-bottom: 1px solid $gray;
-	@media (light-level: dim) { border-bottom: 1px solid $gray-dim; }
+	border-bottom: 1px solid $gray-border;
+	@media (light-level: dim) { border-bottom: 1px solid $gray-border-dim; }
 }
 body > footer {
 	margin-top: 2em;
 	padding-top: 1em;
-	border-top: 1px solid $gray;
-	@media (light-level: dim) { border-top: 1px solid $gray-dim; }
+	border-top: 1px solid $gray-border;
+	@media (light-level: dim) { border-top: 1px solid $gray-border-dim; }
 }
 
 body > footer {
