@@ -16,8 +16,8 @@ body {
 body > header {
 	overflow: hidden;
 	position: relative;
-	left: - $menu-padding;
-	margin-right: - $menu-padding;
+	left: 0 - $menu-padding;
+	margin-right: 0 - $menu-padding;
 
 	h1 {
 		font-weight: 300;
