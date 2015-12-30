@@ -1,9 +1,13 @@
 timezone: America/New_York
 encoding: utf-8
 baseurl: https://susanbpilates.com
-site_title: 'Susan B: Pilates'
 cssuri: /css/
 imguri: /img/
+jsuri: /js/
+
+site_title: 'Susan B: Pilates'
+site_description: 'Local pilates instructor Susan Buonopane.'
+site_keywords: 'pilates instructor,Susan Buonopane'
 
 sass:
   sass_dir: _sass
@@ -23,7 +27,6 @@ defaults:
     values:
       title_delimiter: ' - '
       opengraph_type: website
-      opengraph_description: 'Local pilates instructor Susan Buonopane.'
       opengraph_image: opengraph.png
   - scope:
       path: ''

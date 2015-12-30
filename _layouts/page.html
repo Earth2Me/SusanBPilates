@@ -1,7 +1,7 @@
 ---
 ---
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 	<head>
 		<meta charset="utf-8"/>
 		<title>{{ site.site_title }}{% if page.title %}{{ page.title_delimiter }}{{ page.title }}{% endif %}</title>
@@ -13,16 +13,25 @@
 
 		<link rel="icon" href="{{ site.imguri }}favicon.png"/>
 		<meta name="application-name" content="{{ site.site_title }}"/>
+		<meta name="theme-color" content="#005dbc"/>
+		<link rel="apple-touch-icon" href="{{ site.baseurl }}{{ site.imguri }}favicon.png"/>
 
+		<meta name="description"        content="{% if page.description %}{{ page.description }}{% else %}{{ site.site_description }}{% endif %}"/>
+		<meta name="keywords"           content="{{ site.site_keywords }}"/>
 		<meta property="og:url"         content="{{ site.baseurl }}{{ page.url }}"/>
 		<meta property="og:site_name"   content="{{ site.site_title }}"/>
 		<meta property="og:title"       content="{% if page.title %}{{ page.title }}{% else %}{{ site.site_title }}{% endif %}"/>
-		<meta property="og:description" content="{{ page.opengraph_description }}"/>
+		<meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.site_description }}{% endif %}"/>
 		<meta property="og:image"       content="{{ site.baseurl }}{{ site.imguri }}{{ page.opengraph_image }}"/>
 		<meta property="og:locale"      content="en_US"/>
 		<meta property="og:type"        content="{{ page.opengraph_type }}"/>
 
-		{% include analytics/head.html %}
+		<!--[if lt IE 9]>
+		<script async src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<![endif]-->
+		<script async src="https://www.google-analytics.com/analytics.js"></script>
+		<script async src="https://secure.quantserve.com/quant.js"></script>
+		<script async src="{{ site.jsuri }}analytics.js"></script>
 	</head>
 	<body>
 		{% include analytics/body-header.html %}
