@@ -13,6 +13,13 @@ sass:
   sass_dir: _sass
   style: compressed
 
+exclude:
+  - vendor
+  - README.md
+  - Gemfile
+  - CNAME
+  - .travis.yml
+  - LICENSE
 
 defaults:
   - scope:
@@ -27,7 +34,6 @@ defaults:
       type: pages
     values:
       layout: page
-      permalink: :path/:basename
   - scope:
       path: ''
       type: posts
