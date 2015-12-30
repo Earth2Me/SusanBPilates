@@ -39,16 +39,21 @@ body > header {
 		list-style: none;
 		margin: 0;
 		padding: 0;
-		max-width: 15em;
+		max-width: 16em;
 
 		li {
 			font-size: 1.4em;
 			display: block;
 			margin: 0;
-			padding: 0;
+			padding: 0 0 1em;
 			overflow: visible;
+			position: relative;
 
 			a {
+				display: block;
+			}
+
+			span {
 				$animation-duration: 400ms;
 
 				position: relative;
@@ -60,12 +65,11 @@ body > header {
 				left: 0;
 				transition: left $animation-duration, background-color $animation-duration, color $animation-duration;
 			}
-
-			&:hover a {
-				left: 2em;
-				background-color: $active;
-				color: $active-overlay;
-			}
+				&:hover span {
+					left: 1em;
+					background-color: $active;
+					color: $active-overlay;
+				}
 		}
 	}
 
