@@ -186,4 +186,13 @@ main {
 		margin-top: 0;
 		margin-bottom: 1em;
 	}
+
+	p {
+		padding: 0;
+		margin-bottom: .6em;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
 }
