@@ -1,0 +1,36 @@
+timezone: America/New_York
+encoding: utf-8
+baseurl: https://susanbpilates.com/
+
+origin: https://susanbpilates.com
+cssdir: css/
+imgdir: img/
+title: 'Susan B: Pilates'
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+defaults:
+  - scope:
+      path: ''
+    values:
+      title_delimiter: ' - '
+      opengraph_type: website
+      opengraph_description: 'Local pilates instructor Susan Buonopane.'
+      opengraph_image: opengraph.png
+  - scope:
+      path: ''
+      type: pages
+    values:
+      layout: page
+  - scope:
+      path: ''
+      type: posts
+    values:
+      layout: post
+  - scope:
+      path: ''
+      type: drafts
+    values:
+      layout: draft

@@ -1,0 +1,58 @@
+---
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8"/>
+		<title>{{ page.site_title }}{% if page.title %}{{ page.title_delimiter }}{{ page.title }}{% endif %}</title>
+		<base href="{{ site.baseurl }}"/>
+		<link rel="canonical" href="{{ site.origin }}{{ page.url }}"/>
+
+    	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<link rel="stylesheet" type="text/css" href="{{ site.cssdir }}common.css"/>
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,700"/>
+
+		<meta property="og:url"         content="{{ site.origin }}{{ page.url }}"/>
+		<meta property="og:site_name"   content="{{ site.title }}"/>
+		<meta property="og:title"       content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"/>
+		<meta property="og:description" content="{{ page.opengraph_description }}"/>
+		<meta property="og:image"       content="{{ site.baseurl }}{{ site.imgdir }}{{ page.opengraph_image }}"/>
+		<meta property="og:locale"      content="en_US"/>
+		<meta property="og:type"        content="{{ page.opengraph_type }}"/>
+
+
+
+		{% include analytics/head.html %}
+	</head>
+	<body>
+		{% include analytics/body-header.html %}
+
+		<header>
+			<img id="logo" src="{{ site.imgdir }}logo.svg"/>
+			<nav>
+				<ul id="menu">
+					<li><a href=".">Home</a></li>
+					<li><a href="about">About Susan</a></li>
+					<li><a href="classes">Classes</a></li>
+					<li><a href="sessions">Private Sessions</a></li>
+					<li><a href="contact">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			{% if page.title %}
+				<header>
+					<h1>{{ page.title }}</h1>
+				</header>
+			{% endif %}
+
+			{{ content }}
+		</main>
+
+		<footer>
+			<a href="privacy">Privacy Policy</a>
+		</footer>
+
+		{% include analytics/body-footer.html %}
+	</body>
+</html>

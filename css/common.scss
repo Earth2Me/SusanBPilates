@@ -1,0 +1,100 @@
+---
+---
+
+@import "common";
+
+body {
+	font-size: 12pt;
+	font-family: 'Open Sans', 'Segoe UI', sans-serif;
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 1.5em;
+}
+
+a {
+	text-decoration: underline;
+
+	&, &:link, &:visited {
+		color: $link;
+
+		&:hover, &:focus, &:active {
+			color: $active;
+			text-decoration: none;
+		}
+	}
+}
+
+body > header {
+	h1 {
+		font-weight: 300;
+		font-size: 1.8em;
+		margin: 0 0 .2em;
+	}
+}
+
+	#logo {
+		width: 340px;
+		height: 250px;
+		float: right;
+		margin-left: 1em;
+	}
+
+	#menu {
+		font-weight: 300;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+
+		li {
+			display: block;
+			margin: 0;
+			padding: 0;
+			overflow: visible;
+
+			a {
+				position: relative;
+				display: block;
+				padding: .3em 1em;
+				background-color: transparent;
+				color: $color;
+				left: 0;
+				transition: left 1s, background-color 1s, color 1s;
+
+			}
+
+			&:hover a {
+				left: 1em;
+				background-color: $active;
+				color: $active-overlay;
+			}
+		}
+	}
+
+body > footer {
+	margin-top: 2em;
+	padding-top: 1em;
+	border-top: 1px solid gray;
+	color: gray;
+}
+
+main {
+	h1, h2, h3 {
+		font-weight: 300;
+		padding: 0;
+		margin: 1em 0 .4em;
+
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+		h1 { font-size: 1.6em; }
+		h2 { font-size: 1.4em; }
+		h3 { font-size: 1.2em; }
+
+	& > header h1 {
+		font-size: 1.8em;
+		margin-top: 0;
+		margin-bottom: 1em;
+		border-bottom: 1px solid $color;
+	}
+}
