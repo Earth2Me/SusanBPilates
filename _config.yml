@@ -1,12 +1,8 @@
 timezone: America/New_York
 encoding: utf-8
-origin: https://susanbpilates.com
-uri: /
-baseurl: https://susanbpilates.com/
+baseurl: https://susanbpilates.com
 site_title: 'Susan B: Pilates'
-cssdir: css/
 cssuri: /css/
-imgdir: img/
 imguri: /img/
 
 sass:
