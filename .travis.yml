@@ -3,6 +3,13 @@ rvm: [2.2.4]
 cache: bundler
 script: 'bundle exec jekyll build'
 sudo: false
+
 branches:
   only:
     - gh-pages
+
+exclude:
+  - vendor
+  - README.md
+  - Gemfile
+  - CNAME
