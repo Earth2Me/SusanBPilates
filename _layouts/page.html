@@ -8,8 +8,27 @@
 
 		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
-		<link rel="async-stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,700,700italic"/>
-		<style>{% include css/common.css %}</style>
+		
+		{% comment %}<link rel="stylesheet" href="{{ site.cssuri }}common.css"/>{% endcomment %}
+		<style>main,nav,section,article,header,footer,aside,figure,figcaption{display:block}html{background-color:#bbbbc1}@media (light-level: dim){html{background-color:black}}body{font-size:14pt;font-family:'Open Sans', 'Segoe UI', sans-serif;font-weight:300;max-width:1000px;margin:0 auto;padding:1.5em;color:#000;background-color:white}@media (light-level: dim){body{color:#ddd;background-color:black}}body>header{overflow:hidden;position:relative}body>header h1{font-weight:300;font-size:1.7em;margin:0 0 .2em;text-align:center;clear:both}#logo{width:348px;height:256px;display:block;float:right;margin-left:20px}@media (max-width: 450px){#logo{float:none;margin:0 auto;width:174px;height:128px}}#menu{position:relative;display:inline-block;overflow:hidden;font-weight:300;list-style:none;margin:0;padding:0;max-width:16em;left:-0.8em;margin-right:-0.8em}#menu li{font-size:1.15em;display:block;margin:0;padding:0 1em 0 0;overflow:visible;position:relative}#menu li a,#menu li span{display:block;text-decoration:none !important;color:#000}@media (light-level: dim){#menu li a,#menu li span{color:#ddd}}#menu li span{position:relative;padding:0.5em .8em;background-color:transparent;left:0;transition:left 400ms,background-color 400ms,color 400ms}#menu li:hover span{left:1em;background-color:#005dbc;color:#fff}@media (light-level: dim){#menu li:hover span{background-color:#005dbc;color:#fff}}body>header{margin-bottom:2em;padding-bottom:1em;border-bottom:1px solid #bbbbc1}@media (light-level: dim){body>header{border-bottom:1px solid #333}}body>footer{margin-top:2em;padding-top:1em;border-top:1px solid #bbbbc1}@media (light-level: dim){body>footer{border-top:1px solid #333}}body>footer{color:#99999f}@media (light-level: dim){body>footer{color:#555}}body>footer a{text-decoration:underline}body>footer a,body>footer a:link,body>footer a:visited{color:#99999f}@media (light-level: dim){body>footer a,body>footer a:link,body>footer a:visited{color:#555}}body>footer a:hover,body>footer a:focus,body>footer a:active,body>footer a:link:hover,body>footer a:link:focus,body>footer a:link:active,body>footer a:visited:hover,body>footer a:visited:focus,body>footer a:visited:active{color:#99999f;text-decoration:none}@media (light-level: dim){body>footer a:hover,body>footer a:focus,body>footer a:active,body>footer a:link:hover,body>footer a:link:focus,body>footer a:link:active,body>footer a:visited:hover,body>footer a:visited:focus,body>footer a:visited:active{color:#555}}body>footer p{margin:0;padding:0 0 .2em}body>footer p:last-child{padding-bottom:0}main,body>footer{position:relative;clear:both;overflow:hidden}main a{text-decoration:underline}main a,main a:link,main a:visited{color:#005dbc}main a:hover,main a:focus,main a:active,main a:link:hover,main a:link:focus,main a:link:active,main a:visited:hover,main a:visited:focus,main a:visited:active{color:#005dbc;text-decoration:none}@media (light-level: dim){main a:hover,main a:focus,main a:active,main a:link:hover,main a:link:focus,main a:link:active,main a:visited:hover,main a:visited:focus,main a:visited:active{color:#005dbc}}main h1,main h2,main h3{font-weight:300;padding:0;margin:1em 0 .4em}main h1:first-child,main h2:first-child,main h3:first-child{margin-top:0}main h1{font-size:1.5em}main h2{font-size:1.3em}main h3{font-size:1.1em}main>header h1{font-size:1.8em;margin-top:0;margin-bottom:1em}main p{padding:0;margin-bottom:.6em}main p:last-child{margin-bottom:0}</style>
+		
+		{% comment %}<link rel="async-stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,700,700italic"/>{% endcomment %}
+		<style>
+			@font-face {
+				font-family: 'Open Sans';
+				font-style: normal;
+				font-weight: 300;
+				src: local('Open Sans Light'), local('OpenSans-Light'), url('{{ site.fonturi }}open-sans-300.woff2') format('woff2');
+				unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+			}
+			@font-face {
+				font-family: 'Open Sans';
+				font-style: normal;
+				font-weight: 700;
+				src: local('Open Sans Bold'), local('OpenSans-Bold'), url('{{ site.fonturi }}open-sans-700.woff2') format('woff2');
+				unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+			}
+		</style>
 
 		<link rel="icon" href="{{ site.imguri }}favicon.png"/>
 		<meta name="application-name" content="{{ site.site_title }}"/>
