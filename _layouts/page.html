@@ -8,8 +8,8 @@
 
 		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
-		<link rel="stylesheet" type="text/css" href="{{ site.cssuri }}common.css"/>
-		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,700,700italic"/>
+		<link rel="stylesheet" href="{{ site.cssuri }}common.css"/>
+		<link rel="async-stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,700,700italic"/>
 
 		<link rel="icon" href="{{ site.imguri }}favicon.png"/>
 		<meta name="application-name" content="{{ site.site_title }}"/>
@@ -27,6 +27,7 @@
 		<meta property="og:type"        content="{{ page.opengraph_type }}"/>
 
 		<!--[if lt IE 9]><script async src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->
+		<script async src="{{ site.jsuri }}css.js"></script>
 		<script async src="https://www.google-analytics.com/analytics.js"></script>
 		<script async src="https://secure.quantserve.com/quant.js"></script>
 		<script async src="{{ site.jsuri }}analytics.js"></script>
@@ -34,7 +35,7 @@
 	<body>
 		<header>
 			<h1>{{ site.site_title }}</h1>
-			<img id="logo" src="{{ site.imguri }}logo.svg"/>
+			<img id="logo" src="{{ site.imguri }}logo/vector.svg"/>
 			<nav>
 				<ul id="menu">
 					<li><a href="/">        <span>Home            </span></a></li>
